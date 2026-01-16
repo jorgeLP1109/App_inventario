@@ -1,0 +1,4 @@
+#Thu Jan 15 20:41:03 VET 2026
+base.0=D\:\\proyectos\\app_inventario\\android_app\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

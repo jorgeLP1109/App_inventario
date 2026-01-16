@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_logs.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_logs.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_item_sale.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/item_sale.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_credits.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_credits.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_products.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_products.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_login.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_categories.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_categories.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_main.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_register.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_sales.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_sales.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_item_sale_item.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/item_sale_item.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_item_category.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/item_category.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_barcode_scanner.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_barcode_scanner.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_reports.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_reports.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_add_product.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_add_product.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/menu_main_menu.xml.flat",
+        "source": "com.inventario.app-main-42:/menu/main_menu.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_item_log.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/item_log.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_item_credit.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/item_credit.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_dashboard.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_new_sale.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_new_sale.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_item_product.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/item_product.xml"
+    }
+]

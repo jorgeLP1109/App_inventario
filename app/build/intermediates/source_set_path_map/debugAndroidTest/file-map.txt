@@ -1,0 +1,4 @@
+com.inventario.app.test.app-androidTest-0 D:\proyectos\app_inventario\android_app\app\build\generated\res\resValues\androidTest\debug
+com.inventario.app.test.app-mergeDebugAndroidTestResources-1 D:\proyectos\app_inventario\android_app\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.inventario.app.test.app-mergeDebugAndroidTestResources-2 D:\proyectos\app_inventario\android_app\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.inventario.app.test.app-merged_res-3 D:\proyectos\app_inventario\android_app\app\build\intermediates\merged_res\debugAndroidTest

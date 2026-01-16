@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">983596364574</string>
+    <string name="google_api_key" translatable="false">AIzaSyDKOhW4Bs6B_wdO0icGbj6hM_VNJTC_OeY</string>
+    <string name="google_app_id" translatable="false">1:983596364574:android:3b3523a0ce7c7b2ca30f0f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDKOhW4Bs6B_wdO0icGbj6hM_VNJTC_OeY</string>
+    <string name="google_storage_bucket" translatable="false">inventarioapp-f7358.firebasestorage.app</string>
+    <string name="project_id" translatable="false">inventarioapp-f7358</string>
+</resources>

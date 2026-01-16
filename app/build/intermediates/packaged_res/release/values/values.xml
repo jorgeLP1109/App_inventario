@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Inventario App</string>
+    <string name="categories">Categorías</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="gcm_defaultSenderId" translatable="false">983596364574</string>
+    <string name="google_api_key" translatable="false">AIzaSyDKOhW4Bs6B_wdO0icGbj6hM_VNJTC_OeY</string>
+    <string name="google_app_id" translatable="false">1:983596364574:android:3b3523a0ce7c7b2ca30f0f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDKOhW4Bs6B_wdO0icGbj6hM_VNJTC_OeY</string>
+    <string name="google_storage_bucket" translatable="false">inventarioapp-f7358.firebasestorage.app</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="logs">Logs</string>
+    <string name="name">Nombre</string>
+    <string name="password">Contraseña</string>
+    <string name="products">Productos</string>
+    <string name="project_id" translatable="false">inventarioapp-f7358</string>
+    <string name="register">Registrarse</string>
+    <string name="reports">Reportes</string>
+    <string name="sales">Ventas</string>
+</resources>
