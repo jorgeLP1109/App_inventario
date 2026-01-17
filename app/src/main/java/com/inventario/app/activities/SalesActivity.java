@@ -29,7 +29,11 @@ public class SalesActivity extends AppCompatActivity {
         fab = findViewById(R.id.fab);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new SaleAdapter(sales);
+        adapter = new SaleAdapter(sales, sale -> {
+            Intent intent = new Intent(this, SaleDetailActivity.class);
+            intent.putExtra("sale", sale);
+            startActivity(intent);
+        });
         recyclerView.setAdapter(adapter);
 
         loadSales();

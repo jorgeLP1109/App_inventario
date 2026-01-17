@@ -16,9 +16,19 @@ import java.util.Locale;
 public class SaleAdapter extends RecyclerView.Adapter<SaleAdapter.ViewHolder> {
     private List<Sale> sales;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault());
+    private OnSaleClickListener listener;
+
+    public interface OnSaleClickListener {
+        void onSaleClick(Sale sale);
+    }
 
     public SaleAdapter(List<Sale> sales) {
         this.sales = sales;
+    }
+
+    public SaleAdapter(List<Sale> sales, OnSaleClickListener listener) {
+        this.sales = sales;
+        this.listener = listener;
     }
 
     @NonNull
@@ -35,6 +45,10 @@ public class SaleAdapter extends RecyclerView.Adapter<SaleAdapter.ViewHolder> {
         holder.totalText.setText(String.format("$%.2f", sale.getTotal()));
         holder.profitText.setText(String.format("Ganancia: $%.2f", sale.getProfit()));
         holder.itemsText.setText(sale.getItems().size() + " productos");
+        
+        if (listener != null) {
+            holder.itemView.setOnClickListener(v -> listener.onSaleClick(sale));
+        }
     }
 
     @Override

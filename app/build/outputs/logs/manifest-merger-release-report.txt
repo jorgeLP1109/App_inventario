@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.databinding:viewbinding:8.1.0] C:\Users\sofit\.gradle\caches\transforms-3\522922684245c4f90490fac273a17fb2\transformed\jetified-viewbinding-8.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\sofit\.gradle\caches\transforms-3\4b8269b9a6092e94e1c46c3e9b1f7001\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\sofit\.gradle\caches\transforms-3\d9d08a27437338605aa59d1ee6b097e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -126,8 +126,8 @@ ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.
 	android:name
 		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:11:19-57
 application
-ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:13:5-41:19
-INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:13:5-41:19
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:13:5-46:19
+INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:13:5-46:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\sofit\.gradle\caches\transforms-3\4b8269b9a6092e94e1c46c3e9b1f7001\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\sofit\.gradle\caches\transforms-3\4b8269b9a6092e94e1c46c3e9b1f7001\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\sofit\.gradle\caches\transforms-3\d9d08a27437338605aa59d1ee6b097e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -262,6 +262,26 @@ activity#com.inventario.app.activities.CreditsActivity
 ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:40:9-64
 	android:name
 		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:40:19-61
+activity#com.inventario.app.activities.SaleDetailActivity
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:41:9-67
+	android:name
+		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:41:19-64
+activity#com.inventario.app.activities.CustomerDetailActivity
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:42:9-71
+	android:name
+		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:42:19-68
+activity#com.inventario.app.activities.MonthlyCloseActivity
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:43:9-69
+	android:name
+		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:43:19-66
+activity#com.inventario.app.activities.HistoryActivity
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:44:9-64
+	android:name
+		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:44:19-61
+activity#com.inventario.app.activities.ArchivedSalesActivity
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:45:9-70
+	android:name
+		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:45:19-67
 uses-sdk
 INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml

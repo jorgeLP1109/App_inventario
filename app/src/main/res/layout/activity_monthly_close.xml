@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cierre de Mes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/currentMonthText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mes Actual: Enero 2026"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/totalSalesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Ventas: $0.00"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/totalProfitText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Ganancias: $0.00"
+                android:textSize="16sp"
+                android:textColor="#4CAF50"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/salesCountText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Ventas: 0"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚠️ Al cerrar el mes:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• Se archivarán todas las ventas actuales\n• El panel de ventas se reiniciará\n• Podrás consultar este mes en el Historial\n• Esta acción no se puede deshacer"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/closeMonthButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CERRAR MES"
+        android:textSize="16sp"
+        android:backgroundTint="#F44336"/>
+
+</LinearLayout>

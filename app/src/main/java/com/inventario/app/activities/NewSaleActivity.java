@@ -30,7 +30,7 @@ public class NewSaleActivity extends AppCompatActivity {
     private TextView totalText;
     private Button addItemButton, completeSaleButton;
     private RadioGroup paymentTypeGroup;
-    private RadioButton radioContado, radioCredito;
+    private RadioButton radioContado, radioCredito, radioNeki;
     private EditText customerNameInput;
     private Map<String, Product> productsMap = new HashMap<>();
 
@@ -46,6 +46,7 @@ public class NewSaleActivity extends AppCompatActivity {
         paymentTypeGroup = findViewById(R.id.paymentTypeGroup);
         radioContado = findViewById(R.id.radioContado);
         radioCredito = findViewById(R.id.radioCredito);
+        radioNeki = findViewById(R.id.radioNeki);
         customerNameInput = findViewById(R.id.customerNameInput);
 
         paymentTypeGroup.setOnCheckedChangeListener((group, checkedId) -> {
@@ -113,7 +114,8 @@ public class NewSaleActivity extends AppCompatActivity {
             return;
         }
 
-        String paymentType = radioContado.isChecked() ? "CONTADO" : "CREDITO";
+        String paymentType = radioContado.isChecked() ? "CONTADO" : 
+                            radioCredito.isChecked() ? "CREDITO" : "NEKI";
         String customerName = customerNameInput.getText().toString().trim();
 
         if ("CREDITO".equals(paymentType) && customerName.isEmpty()) {

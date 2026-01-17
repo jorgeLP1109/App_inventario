@@ -1,5 +1,6 @@
 package com.inventario.app.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
@@ -31,7 +32,13 @@ public class CreditsActivity extends AppCompatActivity {
         totalDebtText = findViewById(R.id.totalDebtText);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new CreditAdapter(credits, this::markAsPaid);
+        adapter = new CreditAdapter(credits, this::markAsPaid, item -> {
+            Intent intent = new Intent(this, CustomerDetailActivity.class);
+            intent.putExtra("customerName", item.customerName);
+            intent.putExtra("totalDebt", item.totalDebt);
+            intent.putExtra("sales", new ArrayList<>(item.sales));
+            startActivity(intent);
+        });
         recyclerView.setAdapter(adapter);
 
         loadCredits();

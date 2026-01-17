@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/closeMonthText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enero 2026"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/closeTotalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: $13000.00"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/closeProfitText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganancia: $1230.00"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/closeCountText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 ventas"
+            android:textSize="14sp"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

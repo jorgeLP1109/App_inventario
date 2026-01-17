@@ -13,15 +13,26 @@ import java.util.List;
 
 public class CreditAdapter extends RecyclerView.Adapter<CreditAdapter.ViewHolder> {
     private List<CreditItem> credits;
-    private OnPayClickListener listener;
+    private OnPayClickListener payListener;
+    private OnCreditClickListener clickListener;
 
     public interface OnPayClickListener {
         void onPayClick(CreditItem item);
     }
 
-    public CreditAdapter(List<CreditItem> credits, OnPayClickListener listener) {
+    public interface OnCreditClickListener {
+        void onCreditClick(CreditItem item);
+    }
+
+    public CreditAdapter(List<CreditItem> credits, OnPayClickListener payListener) {
         this.credits = credits;
-        this.listener = listener;
+        this.payListener = payListener;
+    }
+
+    public CreditAdapter(List<CreditItem> credits, OnPayClickListener payListener, OnCreditClickListener clickListener) {
+        this.credits = credits;
+        this.payListener = payListener;
+        this.clickListener = clickListener;
     }
 
     @NonNull
@@ -37,7 +48,11 @@ public class CreditAdapter extends RecyclerView.Adapter<CreditAdapter.ViewHolder
         holder.customerName.setText(item.customerName);
         holder.debtAmount.setText(String.format("Debe: $%.2f", item.totalDebt));
         holder.salesCount.setText(item.sales.size() + " venta(s)");
-        holder.payButton.setOnClickListener(v -> listener.onPayClick(item));
+        holder.payButton.setOnClickListener(v -> payListener.onPayClick(item));
+        
+        if (clickListener != null) {
+            holder.itemView.setOnClickListener(v -> clickListener.onCreditClick(item));
+        }
     }
 
     @Override

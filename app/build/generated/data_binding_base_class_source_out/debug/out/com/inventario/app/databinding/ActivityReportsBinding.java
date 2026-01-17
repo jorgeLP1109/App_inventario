@@ -25,6 +25,15 @@ public final class ActivityReportsBinding implements ViewBinding {
   public final TextView avgSaleText;
 
   @NonNull
+  public final TextView contadoText;
+
+  @NonNull
+  public final TextView creditoText;
+
+  @NonNull
+  public final TextView nekiText;
+
+  @NonNull
   public final BarChart salesChart;
 
   @NonNull
@@ -37,10 +46,14 @@ public final class ActivityReportsBinding implements ViewBinding {
   public final TextView totalSalesText;
 
   private ActivityReportsBinding(@NonNull ScrollView rootView, @NonNull TextView avgSaleText,
+      @NonNull TextView contadoText, @NonNull TextView creditoText, @NonNull TextView nekiText,
       @NonNull BarChart salesChart, @NonNull PieChart topProductsChart,
       @NonNull TextView totalProfitText, @NonNull TextView totalSalesText) {
     this.rootView = rootView;
     this.avgSaleText = avgSaleText;
+    this.contadoText = contadoText;
+    this.creditoText = creditoText;
+    this.nekiText = nekiText;
     this.salesChart = salesChart;
     this.topProductsChart = topProductsChart;
     this.totalProfitText = totalProfitText;
@@ -80,6 +93,24 @@ public final class ActivityReportsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.contadoText;
+      TextView contadoText = ViewBindings.findChildViewById(rootView, id);
+      if (contadoText == null) {
+        break missingId;
+      }
+
+      id = R.id.creditoText;
+      TextView creditoText = ViewBindings.findChildViewById(rootView, id);
+      if (creditoText == null) {
+        break missingId;
+      }
+
+      id = R.id.nekiText;
+      TextView nekiText = ViewBindings.findChildViewById(rootView, id);
+      if (nekiText == null) {
+        break missingId;
+      }
+
       id = R.id.salesChart;
       BarChart salesChart = ViewBindings.findChildViewById(rootView, id);
       if (salesChart == null) {
@@ -104,8 +135,8 @@ public final class ActivityReportsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityReportsBinding((ScrollView) rootView, avgSaleText, salesChart,
-          topProductsChart, totalProfitText, totalSalesText);
+      return new ActivityReportsBinding((ScrollView) rootView, avgSaleText, contadoText,
+          creditoText, nekiText, salesChart, topProductsChart, totalProfitText, totalSalesText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

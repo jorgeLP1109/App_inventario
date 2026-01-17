@@ -38,6 +38,11 @@
         <activity android:name=".activities.LogsActivity" />
         <activity android:name=".activities.BarcodeScannerActivity" />
         <activity android:name=".activities.CreditsActivity" />
+        <activity android:name=".activities.SaleDetailActivity" />
+        <activity android:name=".activities.CustomerDetailActivity" />
+        <activity android:name=".activities.MonthlyCloseActivity" />
+        <activity android:name=".activities.HistoryActivity" />
+        <activity android:name=".activities.ArchivedSalesActivity" />
     </application>
 
 </manifest>

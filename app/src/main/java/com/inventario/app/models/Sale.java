@@ -1,8 +1,9 @@
 package com.inventario.app.models;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Sale {
+public class Sale implements Serializable {
     private String id;
     private List<SaleItem> items;
     private double total;
@@ -45,7 +46,7 @@ public class Sale {
     public boolean isPaid() { return isPaid; }
     public void setPaid(boolean paid) { isPaid = paid; }
 
-    public static class SaleItem {
+    public static class SaleItem implements Serializable {
         private String productId;
         private String productName;
         private int quantity;

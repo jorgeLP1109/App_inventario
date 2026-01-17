@@ -58,6 +58,11 @@
         <activity android:name="com.inventario.app.activities.LogsActivity" />
         <activity android:name="com.inventario.app.activities.BarcodeScannerActivity" />
         <activity android:name="com.inventario.app.activities.CreditsActivity" />
+        <activity android:name="com.inventario.app.activities.SaleDetailActivity" />
+        <activity android:name="com.inventario.app.activities.CustomerDetailActivity" />
+        <activity android:name="com.inventario.app.activities.MonthlyCloseActivity" />
+        <activity android:name="com.inventario.app.activities.HistoryActivity" />
+        <activity android:name="com.inventario.app.activities.ArchivedSalesActivity" />
         <!--
         Service for holding metadata. Cannot be instantiated.
         Metadata will be merged from other manifests.

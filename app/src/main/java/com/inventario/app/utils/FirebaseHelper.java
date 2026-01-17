@@ -45,6 +45,14 @@ public class FirebaseHelper {
         return getDatabase().getReference("logs");
     }
 
+    public static DatabaseReference getMonthlyClosesRef() {
+        return getDatabase().getReference("monthly_closes");
+    }
+
+    public static DatabaseReference getArchivedSalesRef(String monthYear) {
+        return getDatabase().getReference("archived_sales").child(monthYear);
+    }
+
     public static FirebaseUser getCurrentUser() {
         return getAuth().getCurrentUser();
     }

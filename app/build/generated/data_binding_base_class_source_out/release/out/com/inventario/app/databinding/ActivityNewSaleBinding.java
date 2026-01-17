@@ -43,6 +43,9 @@ public final class ActivityNewSaleBinding implements ViewBinding {
   public final RadioButton radioCredito;
 
   @NonNull
+  public final RadioButton radioNeki;
+
+  @NonNull
   public final RecyclerView saleItemsRecyclerView;
 
   @NonNull
@@ -51,8 +54,8 @@ public final class ActivityNewSaleBinding implements ViewBinding {
   private ActivityNewSaleBinding(@NonNull LinearLayout rootView, @NonNull Button addItemButton,
       @NonNull Button completeSaleButton, @NonNull EditText customerNameInput,
       @NonNull RadioGroup paymentTypeGroup, @NonNull RadioButton radioContado,
-      @NonNull RadioButton radioCredito, @NonNull RecyclerView saleItemsRecyclerView,
-      @NonNull TextView totalText) {
+      @NonNull RadioButton radioCredito, @NonNull RadioButton radioNeki,
+      @NonNull RecyclerView saleItemsRecyclerView, @NonNull TextView totalText) {
     this.rootView = rootView;
     this.addItemButton = addItemButton;
     this.completeSaleButton = completeSaleButton;
@@ -60,6 +63,7 @@ public final class ActivityNewSaleBinding implements ViewBinding {
     this.paymentTypeGroup = paymentTypeGroup;
     this.radioContado = radioContado;
     this.radioCredito = radioCredito;
+    this.radioNeki = radioNeki;
     this.saleItemsRecyclerView = saleItemsRecyclerView;
     this.totalText = totalText;
   }
@@ -127,6 +131,12 @@ public final class ActivityNewSaleBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.radioNeki;
+      RadioButton radioNeki = ViewBindings.findChildViewById(rootView, id);
+      if (radioNeki == null) {
+        break missingId;
+      }
+
       id = R.id.saleItemsRecyclerView;
       RecyclerView saleItemsRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (saleItemsRecyclerView == null) {
@@ -140,8 +150,8 @@ public final class ActivityNewSaleBinding implements ViewBinding {
       }
 
       return new ActivityNewSaleBinding((LinearLayout) rootView, addItemButton, completeSaleButton,
-          customerNameInput, paymentTypeGroup, radioContado, radioCredito, saleItemsRecyclerView,
-          totalText);
+          customerNameInput, paymentTypeGroup, radioContado, radioCredito, radioNeki,
+          saleItemsRecyclerView, totalText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ReportsActivity extends AppCompatActivity {
-    private TextView totalSalesText, totalProfitText, avgSaleText;
+    private TextView totalSalesText, totalProfitText, avgSaleText, contadoText, creditoText, nekiText;
     private PieChart topProductsChart;
     private BarChart salesChart;
 
@@ -34,6 +34,9 @@ public class ReportsActivity extends AppCompatActivity {
         totalSalesText = findViewById(R.id.totalSalesText);
         totalProfitText = findViewById(R.id.totalProfitText);
         avgSaleText = findViewById(R.id.avgSaleText);
+        contadoText = findViewById(R.id.contadoText);
+        creditoText = findViewById(R.id.creditoText);
+        nekiText = findViewById(R.id.nekiText);
         topProductsChart = findViewById(R.id.topProductsChart);
         salesChart = findViewById(R.id.salesChart);
 
@@ -45,6 +48,7 @@ public class ReportsActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 double totalSales = 0, totalProfit = 0;
+                double contadoTotal = 0, creditoTotal = 0, nekiTotal = 0;
                 int count = 0;
                 Map<String, Integer> productSales = new HashMap<>();
                 Map<String, Double> productProfits = new HashMap<>();
@@ -55,6 +59,16 @@ public class ReportsActivity extends AppCompatActivity {
                         totalSales += sale.getTotal();
                         totalProfit += sale.getProfit();
                         count++;
+
+                        // Sumar por tipo de pago
+                        String paymentType = sale.getPaymentType();
+                        if ("CONTADO".equals(paymentType)) {
+                            contadoTotal += sale.getTotal();
+                        } else if ("CREDITO".equals(paymentType)) {
+                            creditoTotal += sale.getTotal();
+                        } else if ("NEKI".equals(paymentType)) {
+                            nekiTotal += sale.getTotal();
+                        }
 
                         for (Sale.SaleItem item : sale.getItems()) {
                             String productName = item.getProductName();
@@ -72,6 +86,9 @@ public class ReportsActivity extends AppCompatActivity {
                 totalSalesText.setText(String.format("$%.2f", totalSales));
                 totalProfitText.setText(String.format("$%.2f", totalProfit));
                 avgSaleText.setText(count > 0 ? String.format("$%.2f", totalSales / count) : "$0.00");
+                contadoText.setText(String.format("Contado: $%.2f", contadoTotal));
+                creditoText.setText(String.format("Crédito: $%.2f", creditoTotal));
+                nekiText.setText(String.format("Neki: $%.2f", nekiTotal));
 
                 setupTopProductsChart(productSales);
                 setupProfitChart(productProfits);

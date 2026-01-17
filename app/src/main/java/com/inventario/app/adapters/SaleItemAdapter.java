@@ -14,10 +14,17 @@ import java.util.List;
 public class SaleItemAdapter extends RecyclerView.Adapter<SaleItemAdapter.ViewHolder> {
     private List<Sale.SaleItem> items;
     private Runnable onUpdateCallback;
+    private boolean editable;
 
     public SaleItemAdapter(List<Sale.SaleItem> items, Runnable onUpdateCallback) {
         this.items = items;
         this.onUpdateCallback = onUpdateCallback;
+        this.editable = true;
+    }
+
+    public SaleItemAdapter(List<Sale.SaleItem> items) {
+        this.items = items;
+        this.editable = false;
     }
 
     @NonNull
@@ -34,25 +41,35 @@ public class SaleItemAdapter extends RecyclerView.Adapter<SaleItemAdapter.ViewHo
         holder.priceText.setText(String.format("$%.2f", item.getPrice()));
         holder.quantityText.setText(String.valueOf(item.getQuantity()));
 
-        holder.plusButton.setOnClickListener(v -> {
-            item.setQuantity(item.getQuantity() + 1);
-            notifyItemChanged(position);
-            onUpdateCallback.run();
-        });
+        if (editable) {
+            holder.plusButton.setVisibility(View.VISIBLE);
+            holder.minusButton.setVisibility(View.VISIBLE);
+            holder.removeButton.setVisibility(View.VISIBLE);
 
-        holder.minusButton.setOnClickListener(v -> {
-            if (item.getQuantity() > 1) {
-                item.setQuantity(item.getQuantity() - 1);
+            holder.plusButton.setOnClickListener(v -> {
+                item.setQuantity(item.getQuantity() + 1);
                 notifyItemChanged(position);
                 onUpdateCallback.run();
-            }
-        });
+            });
 
-        holder.removeButton.setOnClickListener(v -> {
-            items.remove(position);
-            notifyItemRemoved(position);
-            onUpdateCallback.run();
-        });
+            holder.minusButton.setOnClickListener(v -> {
+                if (item.getQuantity() > 1) {
+                    item.setQuantity(item.getQuantity() - 1);
+                    notifyItemChanged(position);
+                    onUpdateCallback.run();
+                }
+            });
+
+            holder.removeButton.setOnClickListener(v -> {
+                items.remove(position);
+                notifyItemRemoved(position);
+                onUpdateCallback.run();
+            });
+        } else {
+            holder.plusButton.setVisibility(View.GONE);
+            holder.minusButton.setVisibility(View.GONE);
+            holder.removeButton.setVisibility(View.GONE);
+        }
     }
 
     @Override

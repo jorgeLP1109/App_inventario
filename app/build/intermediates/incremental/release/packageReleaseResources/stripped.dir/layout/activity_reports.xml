@@ -102,6 +102,55 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Ventas por Método de Pago"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/contadoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contado: $0.00"
+                    android:textSize="16sp"
+                    android:textColor="#4CAF50"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/creditoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crédito: $0.00"
+                    android:textSize="16sp"
+                    android:textColor="#F44336"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/nekiText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Neki: $0.00"
+                    android:textSize="16sp"
+                    android:textColor="#2196F3" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Productos Más Vendidos"
             android:textSize="18sp"
             android:textStyle="bold"
