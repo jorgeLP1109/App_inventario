@@ -39,6 +39,9 @@ public final class ActivityDashboardBinding implements ViewBinding {
   public final CardView monthlyCloseCard;
 
   @NonNull
+  public final CardView nekiCard;
+
+  @NonNull
   public final CardView productsCard;
 
   @NonNull
@@ -56,8 +59,9 @@ public final class ActivityDashboardBinding implements ViewBinding {
   private ActivityDashboardBinding(@NonNull ScrollView rootView, @NonNull CardView categoriesCard,
       @NonNull CardView creditsCard, @NonNull CardView historyCard, @NonNull CardView logsCard,
       @NonNull TextView lowStockText, @NonNull CardView monthlyCloseCard,
-      @NonNull CardView productsCard, @NonNull CardView reportsCard, @NonNull CardView salesCard,
-      @NonNull TextView todaySalesText, @NonNull TextView totalProductsText) {
+      @NonNull CardView nekiCard, @NonNull CardView productsCard, @NonNull CardView reportsCard,
+      @NonNull CardView salesCard, @NonNull TextView todaySalesText,
+      @NonNull TextView totalProductsText) {
     this.rootView = rootView;
     this.categoriesCard = categoriesCard;
     this.creditsCard = creditsCard;
@@ -65,6 +69,7 @@ public final class ActivityDashboardBinding implements ViewBinding {
     this.logsCard = logsCard;
     this.lowStockText = lowStockText;
     this.monthlyCloseCard = monthlyCloseCard;
+    this.nekiCard = nekiCard;
     this.productsCard = productsCard;
     this.reportsCard = reportsCard;
     this.salesCard = salesCard;
@@ -135,6 +140,12 @@ public final class ActivityDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.nekiCard;
+      CardView nekiCard = ViewBindings.findChildViewById(rootView, id);
+      if (nekiCard == null) {
+        break missingId;
+      }
+
       id = R.id.productsCard;
       CardView productsCard = ViewBindings.findChildViewById(rootView, id);
       if (productsCard == null) {
@@ -166,8 +177,8 @@ public final class ActivityDashboardBinding implements ViewBinding {
       }
 
       return new ActivityDashboardBinding((ScrollView) rootView, categoriesCard, creditsCard,
-          historyCard, logsCard, lowStockText, monthlyCloseCard, productsCard, reportsCard,
-          salesCard, todaySalesText, totalProductsText);
+          historyCard, logsCard, lowStockText, monthlyCloseCard, nekiCard, productsCard,
+          reportsCard, salesCard, todaySalesText, totalProductsText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

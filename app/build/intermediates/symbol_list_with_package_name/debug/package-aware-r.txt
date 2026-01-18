@@ -3008,6 +3008,8 @@ drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
+drawable ic_launcher_background
+drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3089,6 +3091,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_card
+drawable splash_screen
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3465,6 +3468,12 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id nekiAmount
+id nekiCard
+id nekiDate
+id nekiItems
+id nekiRecyclerView
+id nekiReference
 id nekiText
 id never
 id neverCompleteToEnd
@@ -3662,6 +3671,7 @@ id top
 id topPanel
 id topProductsChart
 id totalDebtText
+id totalNekiText
 id totalProductsText
 id totalProfitText
 id totalSalesText
@@ -3826,6 +3836,7 @@ layout activity_login
 layout activity_logs
 layout activity_main
 layout activity_monthly_close
+layout activity_neki_transactions
 layout activity_new_sale
 layout activity_products
 layout activity_register
@@ -3854,6 +3865,7 @@ layout item_category
 layout item_credit
 layout item_log
 layout item_monthly_close
+layout item_neki_transaction
 layout item_product
 layout item_sale
 layout item_sale_item
@@ -3919,6 +3931,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu main_menu
+mipmap ic_launcher
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 string abc_action_bar_home_description
@@ -4523,6 +4536,7 @@ style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Window_Fullscreen
 style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year
 style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
+style SplashTheme
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2

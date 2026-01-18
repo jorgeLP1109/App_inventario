@@ -8,7 +8,10 @@ color teal_200
 color teal_700
 color white
 drawable gradient_background
+drawable ic_launcher_background
+drawable ic_launcher_foreground
 drawable rounded_card
+drawable splash_screen
 id action_logout
 id addItemButton
 id archivedMonthText
@@ -63,6 +66,12 @@ id minStockInput
 id minusButton
 id monthlyCloseCard
 id nameInput
+id nekiAmount
+id nekiCard
+id nekiDate
+id nekiItems
+id nekiRecyclerView
+id nekiReference
 id nekiText
 id passwordInput
 id payButton
@@ -102,6 +111,7 @@ id stockInput
 id todaySalesText
 id topProductsChart
 id totalDebtText
+id totalNekiText
 id totalProductsText
 id totalProfitText
 id totalSalesText
@@ -118,6 +128,7 @@ layout activity_login
 layout activity_logs
 layout activity_main
 layout activity_monthly_close
+layout activity_neki_transactions
 layout activity_new_sale
 layout activity_products
 layout activity_register
@@ -128,10 +139,12 @@ layout item_category
 layout item_credit
 layout item_log
 layout item_monthly_close
+layout item_neki_transaction
 layout item_product
 layout item_sale
 layout item_sale_item
 menu main_menu
+mipmap ic_launcher
 string app_name
 string categories
 string email
@@ -150,3 +163,4 @@ string project_id
 string register
 string reports
 string sales
+style SplashTheme

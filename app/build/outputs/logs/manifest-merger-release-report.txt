@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [androidx.databinding:viewbinding:8.1.0] C:\Users\sofit\.gradle\caches\transforms-3\522922684245c4f90490fac273a17fb2\transformed\jetified-viewbinding-8.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\sofit\.gradle\caches\transforms-3\4b8269b9a6092e94e1c46c3e9b1f7001\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\sofit\.gradle\caches\transforms-3\d9d08a27437338605aa59d1ee6b097e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -126,8 +126,8 @@ ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.
 	android:name
 		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:11:19-57
 application
-ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:13:5-46:19
-INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:13:5-46:19
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:13:5-47:19
+INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:13:5-47:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\sofit\.gradle\caches\transforms-3\4b8269b9a6092e94e1c46c3e9b1f7001\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\sofit\.gradle\caches\transforms-3\4b8269b9a6092e94e1c46c3e9b1f7001\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\sofit\.gradle\caches\transforms-3\d9d08a27437338605aa59d1ee6b097e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -191,7 +191,7 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\sofit\.gradle\c
 	android:label
 		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:16:9-41
 	android:icon
-		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:15:9-58
+		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:15:9-43
 	android:allowBackup
 		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
@@ -282,6 +282,10 @@ activity#com.inventario.app.activities.ArchivedSalesActivity
 ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:45:9-70
 	android:name
 		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:45:19-67
+activity#com.inventario.app.activities.NekiTransactionsActivity
+ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:46:9-73
+	android:name
+		ADDED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml:46:19-70
 uses-sdk
 INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\proyectos\app_inventario\android_app\app\src\main\AndroidManifest.xml

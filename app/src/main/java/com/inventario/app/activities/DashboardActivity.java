@@ -13,7 +13,7 @@ import com.inventario.app.utils.FirebaseHelper;
 
 public class DashboardActivity extends AppCompatActivity {
     private TextView totalProductsText, lowStockText, todaySalesText;
-    private CardView productsCard, salesCard, reportsCard, categoriesCard, logsCard, creditsCard, monthlyCloseCard, historyCard;
+    private CardView productsCard, salesCard, reportsCard, categoriesCard, logsCard, creditsCard, monthlyCloseCard, historyCard, nekiCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class DashboardActivity extends AppCompatActivity {
         creditsCard = findViewById(R.id.creditsCard);
         monthlyCloseCard = findViewById(R.id.monthlyCloseCard);
         historyCard = findViewById(R.id.historyCard);
+        nekiCard = findViewById(R.id.nekiCard);
 
         loadDashboardData();
 
@@ -42,6 +43,7 @@ public class DashboardActivity extends AppCompatActivity {
         creditsCard.setOnClickListener(v -> startActivity(new Intent(this, CreditsActivity.class)));
         monthlyCloseCard.setOnClickListener(v -> startActivity(new Intent(this, MonthlyCloseActivity.class)));
         historyCard.setOnClickListener(v -> startActivity(new Intent(this, HistoryActivity.class)));
+        nekiCard.setOnClickListener(v -> startActivity(new Intent(this, NekiTransactionsActivity.class)));
     }
 
     private void loadDashboardData() {

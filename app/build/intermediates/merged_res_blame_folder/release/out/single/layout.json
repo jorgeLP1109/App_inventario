@@ -1,15 +1,11 @@
 [
     {
-        "merged": "com.inventario.app-mergeReleaseResources-40:/layout/activity_new_sale.xml",
-        "source": "com.inventario.app-main-42:/layout/activity_new_sale.xml"
+        "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-mergeReleaseResources-40:\\layout\\activity_customer_detail.xml",
+        "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_customer_detail.xml"
     },
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-mergeReleaseResources-40:\\layout\\activity_sales.xml",
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_sales.xml"
-    },
-    {
-        "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-mergeReleaseResources-40:\\layout\\activity_customer_detail.xml",
-        "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_customer_detail.xml"
     },
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-mergeReleaseResources-40:\\layout\\activity_add_product.xml",
@@ -60,6 +56,10 @@
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_products.xml"
     },
     {
+        "merged": "com.inventario.app-mergeReleaseResources-40:/layout/activity_neki_transactions.xml",
+        "source": "com.inventario.app-main-42:/layout/activity_neki_transactions.xml"
+    },
+    {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-mergeReleaseResources-40:\\layout\\activity_barcode_scanner.xml",
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_barcode_scanner.xml"
     },
@@ -78,6 +78,10 @@
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-mergeReleaseResources-40:\\layout\\item_product.xml",
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\item_product.xml"
+    },
+    {
+        "merged": "com.inventario.app-mergeReleaseResources-40:/layout/activity_dashboard.xml",
+        "source": "com.inventario.app-main-42:/layout/activity_dashboard.xml"
     },
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-mergeReleaseResources-40:\\layout\\activity_new_sale.xml",
@@ -100,8 +104,8 @@
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.inventario.app-mergeReleaseResources-40:/layout/activity_reports.xml",
-        "source": "com.inventario.app-main-42:/layout/activity_reports.xml"
+        "merged": "com.inventario.app-mergeReleaseResources-40:/layout/item_neki_transaction.xml",
+        "source": "com.inventario.app-main-42:/layout/item_neki_transaction.xml"
     },
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-mergeReleaseResources-40:\\layout\\activity_credits.xml",

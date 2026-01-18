@@ -50,7 +50,15 @@ public class NewSaleActivity extends AppCompatActivity {
         customerNameInput = findViewById(R.id.customerNameInput);
 
         paymentTypeGroup.setOnCheckedChangeListener((group, checkedId) -> {
-            customerNameInput.setVisibility(checkedId == R.id.radioCredito ? View.VISIBLE : View.GONE);
+            if (checkedId == R.id.radioCredito) {
+                customerNameInput.setVisibility(View.VISIBLE);
+                customerNameInput.setHint("Nombre del cliente");
+            } else if (checkedId == R.id.radioNeki) {
+                customerNameInput.setVisibility(View.VISIBLE);
+                customerNameInput.setHint("Código de referencia Neki");
+            } else {
+                customerNameInput.setVisibility(View.GONE);
+            }
         });
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -116,11 +124,21 @@ public class NewSaleActivity extends AppCompatActivity {
 
         String paymentType = radioContado.isChecked() ? "CONTADO" : 
                             radioCredito.isChecked() ? "CREDITO" : "NEKI";
-        String customerName = customerNameInput.getText().toString().trim();
+        String customerName = "";
+        String nekiReference = null;
 
-        if ("CREDITO".equals(paymentType) && customerName.isEmpty()) {
-            Toast.makeText(this, "Ingrese el nombre del cliente", Toast.LENGTH_SHORT).show();
-            return;
+        if ("CREDITO".equals(paymentType)) {
+            customerName = customerNameInput.getText().toString().trim();
+            if (customerName.isEmpty()) {
+                Toast.makeText(this, "Ingrese el nombre del cliente", Toast.LENGTH_SHORT).show();
+                return;
+            }
+        } else if ("NEKI".equals(paymentType)) {
+            nekiReference = customerNameInput.getText().toString().trim();
+            if (nekiReference.isEmpty()) {
+                Toast.makeText(this, "Ingrese el código de referencia Neki", Toast.LENGTH_SHORT).show();
+                return;
+            }
         }
 
         double total = 0, profit = 0;
@@ -130,7 +148,7 @@ public class NewSaleActivity extends AppCompatActivity {
         }
 
         final double finalTotal = total;
-        Sale sale = new Sale(items, total, profit, FirebaseHelper.getCurrentUser().getUid(), paymentType, customerName);
+        Sale sale = new Sale(items, total, profit, FirebaseHelper.getCurrentUser().getUid(), paymentType, customerName, nekiReference);
         FirebaseHelper.getSalesRef().push().setValue(sale)
             .addOnSuccessListener(v -> {
                 updateStock();

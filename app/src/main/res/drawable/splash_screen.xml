@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Background gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="#667eea"
+                android:centerColor="#764ba2"
+                android:endColor="#667eea"
+                android:type="linear"/>
+        </shape>
+    </item>
+    
+    <!-- Logo circle -->
+    <item
+        android:width="140dp"
+        android:height="140dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF"/>
+        </shape>
+    </item>
+    
+    <!-- Box icon -->
+    <item
+        android:width="80dp"
+        android:height="80dp"
+        android:gravity="center">
+        <vector
+            android:width="80dp"
+            android:height="80dp"
+            android:viewportWidth="80"
+            android:viewportHeight="80">
+            
+            <!-- Box base -->
+            <path
+                android:fillColor="#667eea"
+                android:pathData="M20,30 L40,22 L60,30 L60,55 L40,63 L20,55 Z"/>
+            
+            <!-- Box top -->
+            <path
+                android:fillColor="#9FA8DA"
+                android:pathData="M20,30 L40,22 L60,30 L40,38 Z"/>
+            
+            <!-- Box side -->
+            <path
+                android:fillColor="#7986CB"
+                android:pathData="M40,38 L40,63 L60,55 L60,30 Z"/>
+            
+            <!-- Checkmark -->
+            <path
+                android:strokeWidth="3"
+                android:strokeColor="#4CAF50"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:pathData="M30,42 L36,48 L50,34"/>
+            
+        </vector>
+    </item>
+    
+</layer-list>

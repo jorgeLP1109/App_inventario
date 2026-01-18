@@ -1,31 +1,35 @@
 [
     {
-        "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\menu_main_menu.xml.flat",
-        "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\menu\\main_menu.xml"
-    },
-    {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_item_category.xml.flat",
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\item_category.xml"
     },
     {
-        "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\menu\\main_menu.xml"
     },
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_categories.xml.flat",
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_categories.xml"
     },
     {
+        "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_barcode_scanner.xml.flat",
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_barcode_scanner.xml"
     },
     {
-        "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_history.xml.flat",
-        "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_history.xml"
+        "merged": "com.inventario.app-merged_res-41:/layout_item_neki_transaction.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/item_neki_transaction.xml"
     },
     {
-        "merged": "com.inventario.app-merged_res-41:/layout_activity_reports.xml.flat",
-        "source": "com.inventario.app-main-42:/layout/activity_reports.xml"
+        "merged": "com.inventario.app-merged_res-41:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.inventario.app-main-42:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_history.xml.flat",
+        "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_history.xml"
     },
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_customer_detail.xml.flat",
@@ -34,10 +38,6 @@
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_register.xml.flat",
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\activity_register.xml"
-    },
-    {
-        "merged": "com.inventario.app-merged_res-41:/layout_activity_new_sale.xml.flat",
-        "source": "com.inventario.app-main-42:/layout/activity_new_sale.xml"
     },
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_item_sale_item.xml.flat",
@@ -70,6 +70,14 @@
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_item_monthly_close.xml.flat",
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\item_monthly_close.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.inventario.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.inventario.app-main-42:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_dashboard.xml.flat",
@@ -114,6 +122,18 @@
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_item_sale.xml.flat",
         "source": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-main-42:\\layout\\item_sale.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_neki_transactions.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_neki_transactions.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/layout_activity_dashboard.xml.flat",
+        "source": "com.inventario.app-main-42:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.inventario.app-merged_res-41:/drawable_splash_screen.xml.flat",
+        "source": "com.inventario.app-main-42:/drawable/splash_screen.xml"
     },
     {
         "merged": "C:\\Users\\sofit\\.gradle\\daemon\\8.2\\com.inventario.app-merged_res-41:\\layout_activity_reports.xml.flat",

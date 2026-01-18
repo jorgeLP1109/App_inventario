@@ -10,13 +10,14 @@ public class Sale implements Serializable {
     private double profit;
     private String soldBy;
     private long timestamp;
-    private String paymentType; // "CONTADO" o "CREDITO"
+    private String paymentType; // "CONTADO" o "CREDITO" o "NEKI"
     private String customerName;
     private boolean isPaid;
+    private String nekiReference; // Código de referencia para pagos Neki
 
     public Sale() {}
 
-    public Sale(List<SaleItem> items, double total, double profit, String soldBy, String paymentType, String customerName) {
+    public Sale(List<SaleItem> items, double total, double profit, String soldBy, String paymentType, String customerName, String nekiReference) {
         this.items = items;
         this.total = total;
         this.profit = profit;
@@ -24,7 +25,8 @@ public class Sale implements Serializable {
         this.timestamp = System.currentTimeMillis();
         this.paymentType = paymentType;
         this.customerName = customerName;
-        this.isPaid = "CONTADO".equals(paymentType);
+        this.nekiReference = nekiReference;
+        this.isPaid = "CONTADO".equals(paymentType) || "NEKI".equals(paymentType);
     }
 
     public String getId() { return id; }
@@ -45,6 +47,8 @@ public class Sale implements Serializable {
     public void setCustomerName(String customerName) { this.customerName = customerName; }
     public boolean isPaid() { return isPaid; }
     public void setPaid(boolean paid) { isPaid = paid; }
+    public String getNekiReference() { return nekiReference; }
+    public void setNekiReference(String nekiReference) { this.nekiReference = nekiReference; }
 
     public static class SaleItem implements Serializable {
         private String productId;

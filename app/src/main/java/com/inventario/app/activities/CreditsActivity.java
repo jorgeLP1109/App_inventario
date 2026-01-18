@@ -83,15 +83,64 @@ public class CreditsActivity extends AppCompatActivity {
 
     private void markAsPaid(CreditItem item) {
         new AlertDialog.Builder(this)
-            .setTitle("Marcar como Pagado")
-            .setMessage("¿Marcar todas las deudas de " + item.customerName + " como pagadas?")
-            .setPositiveButton("Sí", (d, w) -> {
+            .setTitle("Método de Pago")
+            .setMessage("¿Cómo pagó " + item.customerName + "?")
+            .setPositiveButton("Contado", (d, w) -> {
                 for (Sale sale : item.sales) {
                     FirebaseHelper.getSalesRef().child(sale.getId()).child("paid").setValue(true);
                 }
                 loadCredits();
             })
-            .setNegativeButton("No", null)
+            .setNegativeButton("Neki", (d, w) -> showNekiReferenceDialog(item))
+            .setNeutralButton("Cancelar", null)
+            .show();
+    }
+
+    private void showNekiReferenceDialog(CreditItem item) {
+        android.widget.EditText input = new android.widget.EditText(this);
+        input.setHint("Código de referencia Neki");
+        input.setPadding(50, 30, 50, 30);
+
+        new AlertDialog.Builder(this)
+            .setTitle("Referencia Neki")
+            .setMessage("Ingrese el código de referencia de la transacción Neki:")
+            .setView(input)
+            .setPositiveButton("Guardar", (d, w) -> {
+                String nekiRef = input.getText().toString().trim();
+                if (nekiRef.isEmpty()) {
+                    android.widget.Toast.makeText(this, "Debe ingresar una referencia", android.widget.Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                
+                // Consolidar todos los items de las ventas en crédito
+                List<Sale.SaleItem> allItems = new ArrayList<>();
+                double totalAmount = 0;
+                double totalProfit = 0;
+                
+                for (Sale sale : item.sales) {
+                    if ("CREDITO".equals(sale.getPaymentType()) && !sale.isPaid()) {
+                        allItems.addAll(sale.getItems());
+                        totalAmount += sale.getTotal();
+                        totalProfit += sale.getProfit();
+                        // Marcar la venta original como pagada sin cambiar su tipo
+                        FirebaseHelper.getSalesRef().child(sale.getId()).child("paid").setValue(true);
+                    }
+                }
+                
+                // Crear UNA SOLA venta Neki consolidada
+                if (!allItems.isEmpty()) {
+                    Sale nekiSale = new Sale(allItems, totalAmount, totalProfit, 
+                        FirebaseHelper.getCurrentUser().getUid(), "NEKI", "", nekiRef);
+                    FirebaseHelper.getSalesRef().push().setValue(nekiSale);
+                    
+                    FirebaseHelper.logActivity("PAGO_NEKI_CREDITO", 
+                        "Cliente: " + item.customerName + ", Ref: " + nekiRef + ", Total: $" + totalAmount);
+                }
+                
+                loadCredits();
+                android.widget.Toast.makeText(this, "Deuda pagada con Neki - Ref: " + nekiRef, android.widget.Toast.LENGTH_LONG).show();
+            })
+            .setNegativeButton("Cancelar", null)
             .show();
     }
 
